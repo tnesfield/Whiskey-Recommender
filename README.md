@@ -3,7 +3,7 @@
 
 
 <p align="Left">
-<img src="img/stag-antler-whiskey-flight.jpg" width="800" height="200">
+<img src="img/stag-antler-whiskey-flight.jpg" width="600" height="250">
 </p>
 
 Tehera Nesfield
@@ -27,56 +27,29 @@ Tehera Nesfield
 I webscraped this dataset from <a href="https://www.whiskybase.com//">whiskeybase.com</a>, which has roughly 157,000 bottles. I chose this site because I was able to gather user ratings for each bottle of whiskey. I focused on popular whiskey distilleries and bottles that were in their core range. Meaning rare and limited bottles are not included. My dataset includes 4 types of whiskey - Scotch, Irish Bourbon and Japanese. There are 7 categories and 29 Distilleries.
 
 ## EDA
-I gathered 5125 ratings.
-The top 3 most frequently rated bottles are Scotch.
-Most reviewers gave 1 or 2 ratings, the most active reviewer gave 30 ratings.
-The average rating for bottles in my dataset is 85
-My lowest rating was 20 for a bottle of Irish Whiskey
+* I gathered 5125 ratings.
+* The top 3 most frequently rated bottles are Scotch.
+* Most reviewers gave 1 or 2 ratings, the most active reviewer gave 30 ratings.
+* The average rating for bottles in my dataset is 85
+* My lowest rating was 20 for a bottle of Irish Whiskey
 
 <p align="left">
-<img src="img/the_ratings.png" width="200" height="400">
+<img src="img/the_ratings.png" width="925" height="500">
 </p>
 
-<iframe src='https://gfycat.com/ifr/BowedEvilGaur' frameborder='0' scrolling='no' allowfullscreen width='640' height='1182'></iframe>
 
 
-## Goal
-Accurately classify a given image from a dataset into different disease categories or a healthy leaf.
+## The Model
+The Whiskey Recommender uses explicit filtering. It takes a user’s whiskey type and budget and filters the dataset. It then uses a matrix factorization algorithm, popularized by Simon Funk during a Netflix challenge in 2009. The algorithm makes predictions about a user's rating for a whiskey, which the user hasn't rated yet. These predictions are built upon the existing ratings of other users, who have similar ratings to the active user. 
 
-<p align="center">
-<img src="graphics/tomato_leaves.png" width="850" height="450">
-</p>
-
-## Dataset
-My dataset was a little imbalanced. Total images = 12,814
-
-<a href="https://github.com/spMohanty/PlantVillage-Dataset/tree/master/raw/color">
-<p align="center">
-<img src="graphics/pie_chart.png" width="800" height="450">
-</a>
-
-## Model Framework
-I used a keras Sequential model with 9 layers
+Model was tested and received a RMSE score of 4.3 meaning predictions were within 4pts of the actual value. If a drinker rated a whiskey with a score of 85. The model would predict somewhere between 81 and 89. 
 
 <p align="left">
-<img src="graphics/model.png" width="200" height="400">
+<img src="img/algorithm.png" width="200" height="400">
 </p>
 
-## Results
 
-* My train set ran with **96% accuracy**
-* My validation set ran with **93% accuracy**
-* My holdout set ran with **92% accuracy**
 
-<p align="left">
-<img src="graphics/training-test-accuracy.png" width="350" height="350">
-</p>
-<p align="left">
-<img src="graphics/training-results.png" width="400" height="100">
-</p>
-                                                               
-### Confusion Matrix
 
-<p align="center">
-<img src="graphics/confusion-matrix.png" width="850" height="700">
-</p>
+
+
