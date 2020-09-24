@@ -51,6 +51,6 @@ The Whiskey Recommender uses explicit filtering. It takes a user’s whiskey typ
 I deployed the recommender using Flask.
 
 <p align="left">
-<img src="img/website.png" width="300" height="300">
+<img src="img/website.png" width="250" height="200">
 </p>
 
