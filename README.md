@@ -39,17 +39,18 @@ I webscraped this dataset from <a href="https://www.whiskybase.com//">whiskeybas
 
 
 
-## The Model
-The Whiskey Recommender uses explicit filtering. It takes a user’s whiskey type and budget and filters the dataset. It then uses a matrix factorization algorithm, popularized by Simon Funk during a Netflix challenge in 2009. The algorithm makes predictions about a user's rating for a whiskey, which the user hasn't rated yet. These predictions are built upon the existing ratings of other users, who have similar ratings to the active user. 
-
-Model was tested and received a RMSE score of 4.3 meaning predictions were within 4pts of the actual value. If a drinker rated a whiskey with a score of 85. The model would predict somewhere between 81 and 89. 
+## Model
+The Whiskey Recommender uses explicit filtering. It takes a user’s whiskey type and budget and filters the dataset. It then uses matrix factorization using SVD in Surprise. My model was tested and received a RMSE score of 4.3.
 
 <p align="left">
-<img src="img/algorithm.png" width="200" height="400">
+<img src="img/algorithm.png" width="400" height="400">
 </p>
 
+## Deployment
 
+I deployed the recommender using Flask.
 
-
-
+<p align="left">
+<img src="img/website.png" width="400" height="400">
+</p>
 
