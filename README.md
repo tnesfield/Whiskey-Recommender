@@ -24,11 +24,12 @@ Tehera Nesfield
 
 
 ## Data
+
 I webscraped this dataset from <a href="https://www.whiskybase.com//">whiskeybase.com</a>. I chose this site because I was able to gather user ratings for each bottle of whiskey. I focused on popular whiskey distilleries and bottles that were in their core range, rare and limited bottles are not included. 
 
 <p align="left">
 <img src="img/the_whiskey.png" width="925" height="500">
-</p
+</p>
 
 
 ## EDA
@@ -40,7 +41,8 @@ I webscraped this dataset from <a href="https://www.whiskybase.com//">whiskeybas
 
 
 ## Model
-The Whiskey Recommender uses explicit filtering. It takes a user’s whiskey type and budget and filters the dataset. It then uses matrix factorization using SVD in Surprise. My model was tested and received a RMSE score of 4.3.
+
+The Whiskey Recommender uses explicit filtering. It takes a user’s whiskey type and budget and filters the dataset. It then uses matrix factorization with SVD in Surprise. My model was tested and received a RMSE score of 4.3.
 
 <p align="left">
 <img src="img/algorithm.png" width="400" height="400">
