@@ -62,6 +62,4 @@ I deployed the recommender using Flask.
 <img src="img/website2.png" width="250" height="200">
 <p align="center">
 <img src="img/results.png" width="925" height="500">
-<p align="center">
-<img src="img/website2.png" width="250" height="200">
 </p>
