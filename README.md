@@ -24,14 +24,14 @@ Tehera Nesfield
 
 
 ## Data
-I webscraped this dataset from <a href="https://www.whiskybase.com//">whiskeybase.com</a>, which has roughly 157,000 bottles. I chose this site because I was able to gather user ratings for each bottle of whiskey. I focused on popular whiskey distilleries and bottles that were in their core range. Meaning rare and limited bottles are not included. My dataset includes 4 types of whiskey - Scotch, Irish Bourbon and Japanese. There are 7 categories and 29 Distilleries.
+I webscraped this dataset from <a href="https://www.whiskybase.com//">whiskeybase.com</a>. I chose this site because I was able to gather user ratings for each bottle of whiskey. I focused on popular whiskey distilleries and bottles that were in their core range, rare and limited bottles are not included. 
+
+<p align="left">
+<img src="img/the_whiskey.png" width="925" height="500">
+</p
+
 
 ## EDA
-* I gathered 5125 ratings.
-* The top 3 most frequently rated bottles are Scotch.
-* Most reviewers gave 1 or 2 ratings, the most active reviewer gave 30 ratings.
-* The average rating for bottles in my dataset is 85
-* My lowest rating was 20 for a bottle of Irish Whiskey
 
 <p align="left">
 <img src="img/the_ratings.png" width="925" height="500">
