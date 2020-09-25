@@ -42,7 +42,7 @@ I webscraped this dataset from <a href="https://www.whiskybase.com//">whiskeybas
 
 ## Model
 
-The Whiskey Recommender uses explicit filtering. It takes a user’s whiskey type and budget and filters the dataset. It then uses matrix factorization with SVD in Surprise. My model was tested and received a RMSE score of 4.3.
+The Whiskey Recommender uses explicit filtering. It takes a user’s whiskey type and budget to filter the dataset. It then uses matrix factorization with SVD in Surprise to predict the user's rating. My model was tested and received a RMSE score of 4.3. For the final recommendation, it outputs the top 5 predicted bottles.
 
 <p align="left">
 <img src="img/algorithm.png" width="400" height="400">
